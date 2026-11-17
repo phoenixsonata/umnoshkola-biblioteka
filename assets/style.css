@@ -64,9 +64,28 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .next { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .nx-label { display: block; font-size: 13px; color: var(--pencil); }
 .soon { color: var(--pencil); }
-.cta { background: var(--accent); color: #fff; border-radius: 10px; padding: 18px 20px; margin: 0 0 16px; }
-.cta a { color: #fff; font-weight: 600; }
-.cta p { margin: 0; }
+/* приглашения в УмноШколу (17.11.2026): полоса под шапкой, карточка «Занятия с учителем», итог теста */
+.btn { display: inline-block; background: var(--margin); color: #fff; text-decoration: none; font-weight: 600; border: 1px solid var(--margin); border-radius: 8px; padding: 8px 16px; line-height: 1.3; }
+.btn:hover { background: #b83247; border-color: #b83247; }
+.btn-2 { background: var(--sheet); color: var(--accent); border-color: var(--accent); }
+.btn-2:hover { background: var(--accent-soft); border-color: var(--accent); }
+.school { background: var(--sun); border-bottom: 1px solid var(--rule); font-size: 15px; line-height: 1.4; }
+.school-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px; padding-block: 8px; }
+.school p { margin: 0; flex: 1 1 300px; }
+.school .nb { white-space: nowrap; }
+.school .btn { flex: none; padding: 5px 12px; font-size: 15px; }
+@media (max-width: 600px) { .school-more { display: none; } }
+.cta { display: flex; gap: 18px; align-items: center; background: var(--sheet); border: 2px solid var(--accent); border-radius: 10px; padding: 18px 20px; margin: 0 0 16px; }
+.cta-hero { flex: none; height: 120px; width: auto; }
+.cta-body > p { margin: 0 0 12px; }
+.cta-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.cta-body > .cta-phone { margin: 0; font-size: 14px; color: var(--pencil); }
+.cta-phone a { white-space: nowrap; }
+@media (max-width: 560px) { .cta { flex-direction: column; align-items: flex-start; } .cta-hero { height: 90px; } }
+.quiz-end { margin-top: 14px; padding: 12px 14px; background: var(--ok-soft); border-radius: 8px; }
+.quiz-end p { margin: 0; }
+.quiz-ok { font-weight: 600; color: var(--ok); }
+.quiz-end .quiz-help { margin-top: 6px; }
 .checked { font-size: 14px; color: var(--pencil); }
 
 .hero { padding-block: 10px 4px; }
