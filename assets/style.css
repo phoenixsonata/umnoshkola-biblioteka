@@ -103,6 +103,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 
 .foot { border-top: 1px solid var(--rule); background: var(--sheet); font-size: 14px; color: var(--pencil); }
 .foot .wrap { padding-block: 18px; }
+.foot-social small { font-size: 12px; }
 
 /* записи «уголком» и «столбиком»: моноширинный блок с сохранёнными пробелами */
 .block pre { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 16px; margin: 0 0 14px; overflow-x: auto; }
